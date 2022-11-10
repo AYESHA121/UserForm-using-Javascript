@@ -76,7 +76,7 @@ function EntryValid() {
   check5 = false;
   check6 = false;
   if (validations()) {
-    if (fname.length > 5) {
+    if (fname.length > 500) {
       document.getElementById("firstspan").innerHTML =
         "fisrt name should be less than 20 characters";
       return false;
