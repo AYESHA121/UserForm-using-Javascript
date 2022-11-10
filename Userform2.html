@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Userform2.css" />
+    <script src="userform2.js" defer></script>
+  </head>
+
+  <body>
+    <center>
+      <div class="formdiv">
+        <form onsubmit="event.preventDefault(); CollectData();" id="dataform">
+          <div>
+            <label for="fname" class="labels">First Name</label>
+
+            <input type="text" name="fname" id="fname" class="inputs" />
+          </div>
+          <span id="firstspan" class="AlertSpan"></span>
+          <div>
+            <label for="lname" class="labels">Last Name</label>
+
+            <input type="text" name="lname" id="lname" class="inputs" />
+          </div>
+          <span id="lastspan" class="AlertSpan"></span>
+          <div>
+            <label for="phoneNumber" class="labels">Number</label>
+
+            <input
+              type="text"
+              name="phoneNumber"
+              id="PhoneNumber"
+              class="inputs"
+            />
+          </div>
+          <span id="numspan" class="AlertSpan"></span>
+          <div>
+            <label for="email" class="labels">Email</label>
+
+            <input type="email" name="email" id="email" class="inputs" />
+          </div>
+          <span id="emailspan" class="AlertSpan"></span>
+          <div>
+            <label for="age" class="labels">Age</label>
+
+            <input type="number" name="age" id="age" min="1" class="inputs" />
+          </div>
+          <span id="agespan" class="AlertSpan"></span>
+          <div>
+            <input type="submit" name="add" id="add" value="Add" />
+          </div>
+          <div>
+            <input
+              type="button"
+              name="update"
+              id="update"
+              value="Update"
+              style="display: none"
+            />
+          </div>
+        </form>
+      </div>
+    </center>
+    <center>
+      <div id="datatable"></div>
+    </center>
+  </body>
+</html>
+
+<!-- 
+
+<center>
+    <table id="results">
+        <tr>
+            <th><label>First Name</label></th>
+            <th><label>Last Name</label></th>
+            <th> <label>Number</label> </th>
+            <th><label>Email</label></th>
+            <th><label>Age</label></th>
+             <td colspan="6 "> <input type="button " name="add " id="add " value="Add "></td> 
+</tr>
+<tr>
+    <td id="a"></td>
+    <td id="b"></td>
+    <td id="c"> </td>
+    <td id="d">
+    </td>
+    <td id="e"></td>
+    <td colspan="6 "> <input type="button " name="add " id="add " value="Add "></td>
+</tr>
+
+</table> -->
